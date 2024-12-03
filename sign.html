@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/SignUp form </title>
+    <link rel="stylesheet" href="sign.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <!-- Register Form -->
+      <div class="form-container register-container">
+        <form action="sign-up.php" method="POST">
+          <h1>Daftar disini</h1>
+          <div class="form-control">
+            <input type="text" id="username" name="name" placeholder="Username" required />
+            <small id="username-error"></small>
+            <span></span>
+          </div>
+          <div class="form-control">
+            <input type="email" id="email" name="email" placeholder="Email" required />
+            <small id="email-error"></small>
+            <span></span>
+          </div>
+          <div class="form-control">
+            <input type="password" id="password" name="password" placeholder="Password" required />
+            <small id="password-error"></small>
+            <span></span>
+          </div>
+          <div class="form-control">
+            <input type="text" id="address" name="address" placeholder="Address" required />
+            <small id="address-error"></small>
+            <span></span>
+          </div>
+          <div class="form-control">
+            <input type="text" id="phone" name="phone" placeholder="Phone" required />
+            <small id="phone-error"></small>
+            <span></span>
+          </div>
+          <button type="submit" value="submit">Register</button>
+          <div class="social-container"></div>
+        </form>
+      </div>
+
+      <!-- Login Form -->
+      <div class="form-container login-container">
+        <form action="sign-in.php" method="POST" class="form-lg">
+          <h1>Login</h1>
+          <div class="form-control2">
+            <input type="email" class="email-2" name="email" placeholder="Akun email" required />
+            <small class="email-error-2"></small>
+            <span></span>
+          </div>
+          <div class="form-control2">
+            <input type="password" class="password-2" name="password" placeholder="Password" required />
+            <small class="password-error-2"></small>
+            <span></span>
+          </div>
+
+          <div class="content">
+            <div class="pass-link">
+              <a href="forgot_password.php">Forget Password?</a>
+            </div>
+          </div>
+          <button type="submit" value="submit">Login</button>
+        </form>
+      </div>
+
+      <!-- Overlay for Switching Between Forms -->
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1 class="title">
+              Welcome to Exam Website
+            </h1>
+            <p>Login here if you have an account.</p>
+            <button class="ghost" id="login">
+              Sign In
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </div>
+
+          <div class="overlay-panel overlay-right">
+            <h1 class="title">
+              Welcome to Exam Website
+            </h1>
+            <p>Please register here to enter the Website.</p>
+            <button class="ghost" id="register">
+              Sign Up
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="sign.js"></script>
+  </body>
+</html>
