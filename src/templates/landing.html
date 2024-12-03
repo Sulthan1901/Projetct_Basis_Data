@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pendaftaran Ujian</title>
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="/src/css/landing.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-xl font-bold">SLIBAW</h1>
+            <nav>
+                <a href="#features" class="ml-4 hover:text-gray-300">Fitur</a>
+                <a href="#subtests" class="ml-4 hover:text-gray-300">Subtes</a>
+                <a href="#contact" class="ml-4 hover:text-gray-300">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-white py-16">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-4">Pendaftaran UTBK</h2>
+            <p class="text-gray-700 mb-6">UTBK (Ujian Tulis Berbasis Komputer) adalah ujian seleksi masuk perguruan tinggi di Indonesia yang diselenggarakan oleh Sistem Layanan Informasi dan Beasiswa untuk Akses Wawasan (SLIBAW). UTBK bertujuan untuk mengukur kemampuan akademik dan potensi calon mahasiswa agar dapat bersaing dalam seleksi penerimaan di perguruan tinggi negeri (PTN).</p>
+            <a href="#register" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="/src/images/bg01.png" alt="">
+            </div>
+            <div class="item">
+                <img src="/src/images/bg02.png" alt="">
+            </div>
+            <div class="item">
+                <img src="/src/images/bg03.png" alt="">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <section id="subtests" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">Subtes yang Tersedia</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tes Potensi Skolastik (TPS) -->
+                <div class="bg-gray-100 p-6 shadow-lg rounded-lg">
+                    <div class="text-center">
+                        <button class="w-full text-xl font-semibold mb-2 focus:outline-none">
+                            Tes Potensi Skolastik (TPS)
+                        </button>
+                    </div>
+                    <div class="mt-2 text-gray-700">
+                        <ul class="list-disc pl-6">
+                            <li>Penalaran Umum</li>
+                            <li>Pengetahuan Kuantitatif</li>
+                            <li>Pengetahuan dan Pemahaman Umum</li>
+                            <li>Pemahaman Bacaan dan Menulis</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Tes Literasi -->
+                <div class="bg-gray-100 p-6 shadow-lg rounded-lg">
+                    <div class="text-center">
+                        <button class="w-full text-xl font-semibold mb-2 focus:outline-none">
+                            Tes Literasi
+                        </button>
+                    </div>
+                    <div class="mt-2 text-gray-700">
+                        <ul class="list-disc pl-6">
+                            <li>Literasi Bahasa Indonesia</li>
+                            <li>Literasi Bahasa Inggris</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Penalaran Matematika -->
+                <div class="bg-gray-100 p-6 shadow-lg rounded-lg">
+                    <div class="text-center">
+                        <button class="w-full text-xl font-semibold mb-2 focus:outline-none">
+                            Penalaran Matematika
+                        </button>
+                    </div>
+                    <div class="mt-2 text-gray-700">
+                        <ul class="list-disc pl-6">
+                            <li>Penalaran Matematika</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <!--faq-->
+    <section id="faq" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-8">Pertanyaan yang Sering Diajukan</h2>
+            <div class="accordion">
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-title">
+                        <span>Apa itu UTBK?</span>
+                        <span class="icon">➔</span>
+                    </div>
+                    <div class="accordion-content">
+                        UTBK adalah Ujian Tulis Berbasis Komputer yang digunakan sebagai seleksi masuk perguruan tinggi negeri (PTN) di Indonesia.
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-title">
+                        <span>Bagaimana cara mendaftar UTBK?</span>
+                        <span class="icon">➔</span>
+                    </div>
+                    <div class="accordion-content">
+                        Anda dapat mendaftar UTBK melalui situs resmi SLIBAW dengan membuat akun, memilih jadwal ujian, dan menyelesaikan pembayaran.
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-title">
+                        <span>Berapa biaya pendaftaran UTBK?</span>
+                        <span class="icon">➔</span>
+                    </div>
+                    <div class="accordion-content">
+                        Biaya pendaftaran UTBK tergantung pada kelompok ujian yang dipilih (Saintek, Soshum, atau Campuran) dan diumumkan oleh SLIBAW.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact" class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto text-center px-4">
+            <p class="mb-4">Hubungi kami untuk informasi lebih lanjut.</p>
+            <a href="mailto:support@ujian.com" class="underline hover:text-gray-300">support@ujian.com</a>
+        </div>
+    </footer>
+
+    <script src="/src/js/landing.js"></script>
+</body>
+</html>
